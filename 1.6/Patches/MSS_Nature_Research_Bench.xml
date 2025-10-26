@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps</xpath>
+		<value>
+			<comps Inherit="False">
+				<li Class="CompProperties_ReportWorkSpeed">
+					<workSpeedStat>ResearchSpeedFactor</workSpeedStat>
+					<displayReasons>false</displayReasons>
+				</li>
+				<li Class="CompProperties_Power">
+					<compClass>CompPowerTrader</compClass>
+					<basePowerConsumption>250</basePowerConsumption>
+					<shortCircuitInRain>true</shortCircuitInRain>
+				</li>
+				<li Class="CompProperties_Flickable"/>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+					<li>MultiAnalyzer</li>
+					<li>MSS_Nature_Broli_Database</li>
+					</linkableFacilities>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>		<!-- Fallback in case of methods to get around electricity (books, scenarios etc) -->
+		<value>
+			<requiredResearchFacilities>
+				<li>MSS_Nature_Broli_Database</li>
+			</requiredResearchFacilities>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Electricity"]</xpath>
+		<value>
+			<requiredResearchFacilities>
+				<li>MSS_Nature_Broli_Database</li>
+			</requiredResearchFacilities>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="PackagedSurvivalMeal"]</xpath>
+		<value>
+			<requiredResearchFacilities>
+				<li>MSS_Nature_Broli_Database</li>
+			</requiredResearchFacilities>
+		</value>
+	</Operation>
+</Patch>

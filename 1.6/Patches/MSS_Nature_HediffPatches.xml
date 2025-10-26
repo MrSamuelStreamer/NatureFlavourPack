@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="BS_ParasitePilot"]/stages</xpath>
+		<value>
+			<stages>
+				<li>
+					<label>Parasitic Gauranlen</label>
+					<painFactor>0.15</painFactor>
+					<hungerRateFactor>1.3</hungerRateFactor>
+					<statFactors>
+						<GlobalLearningFactor>2.0</GlobalLearningFactor>
+					</statFactors>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GeneDef[defName="BS_AriettyFrame"]/label</xpath>
+		<value>
+			<label>Extremely Small</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GeneDef[defName="BS_AriettyFrame"]/description</xpath>
+		<value>
+			<description>Carriers of this gene are extremely small with fragility to match. Carriers of this gene generally rely on other means of survival, be it parasitism, symbiosis, or stealth.</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/GeneDef[defName="BS_AriettyFrame"]/statFactors</xpath>
+		<value>
+			<statFactors>
+				<SM_BodySizeMultiplier>0.05</SM_BodySizeMultiplier>
+				<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				<MeleeDamageFactor>3</MeleeDamageFactor>
+				<MiningSpeed>0.1</MiningSpeed>
+				<DeepDrillingSpeed>0.25</DeepDrillingSpeed>
+				<ConstructionSpeed>0.25</ConstructionSpeed>
+				<SM_RaidWealthMultiplier>0.25</SM_RaidWealthMultiplier>
+			</statFactors>
+		</value>
+	</Operation>
+</Patch>

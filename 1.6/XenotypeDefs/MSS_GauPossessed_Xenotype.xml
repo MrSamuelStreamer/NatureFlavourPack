@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSS_Gaupossessed</defName>
+    <label>Gaupossessed</label>
+    <description>Gaupossessed are the result of a Gauranlen Queen that has been forced to parasitise a non-tree host. Taking a disposable host offers the fragile Queen an additional layer of safety, and the benefits of a regular human body, such as regular manipulation, weapons, and armour. Unfortunately the host body undergoes detrimental mutation and inherits several weaknesses. Should the host be incapacitated the Queen can safely escape and seek out a new host.</description>
+    <descriptionShort>A mutated human that has been taken as a host by a desperate Gauranlen Queen.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon31</iconPath>
+    <inheritable>false</inheritable>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_Photosynthesis</li>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_GauranlenAffinity</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Very_Passioned_Learning_Gene</li>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_SapBlood</li>
+      <li MayRequire="sarg.alphagenes">AG_PlantFlesh</li>
+      <li>Immunity_Weak</li>
+      <li>WoundHealing_Slow</li>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_ProgressiveAttunement</li>
+      <li>PsychicAbility_Extreme</li>
+      <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_GauranlenNeed</li>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_GreenThumb</li>
+      <li MayRequire="sarg.alphagenes">AG_ColdSlowness</li>
+      <li MayRequire="sarg.alphagenes">AG_ToxResist_Vulnerability</li>
+      <li MayRequire="sarg.alphagenes">AG_ToxicEnvironmentResistance_Frail</li>
+      <li>FireWeakness</li>
+      <li>FireTerror</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_Pain_None</li>
+      <li>Delicate</li>
+      <li>Beauty_Beautiful</li>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_FoliageHair</li>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_BarkSkin</li>
+      <li MayRequire="vanillaracesexpanded.phytokin">VRE_HairColor_Gauranlen</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_PerfectMemory</li>
+      <li>Hair_Grayless</li>
+      <li>AptitudeRemarkable_Plants</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

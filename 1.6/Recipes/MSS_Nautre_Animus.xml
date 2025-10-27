@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+  <RecipeDef>
+    <defName>MSS_Animus_Stone</defName>
+    <label>Craft Animus Stone</label>
+    <description>Chiseling an Animus Stone.</description>
+    <jobString>Chiseling an Animus Stone.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <workAmount>36000</workAmount>
+    <workSkill>Artistic</workSkill>
+    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <recipeUsers>
+      <li>TableSculpting</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <!-- -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>dfifd_AnimaRoot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GauranlenSeed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Jade</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
+    </ingredients>
+    <!-- -->
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Jade</li>
+        <li>GauranlenSeed</li>
+        <li>dfifd_AnimaRoot</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <!-- -->
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Jade</li>
+        <li>GauranlenSeed</li>
+        <li>dfifd_AnimaRoot</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <!-- -->
+    <products>
+      <AnimusStone>1</AnimusStone>
+    </products>
+    <skillRequirements>
+      <Artistic>10</Artistic>
+    </skillRequirements>
+  </RecipeDef>
+</Defs>

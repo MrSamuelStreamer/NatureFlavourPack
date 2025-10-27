@@ -1,0 +1,46 @@
+<Defs>
+  <HediffDef>
+    <defName>MSS_Implanted</defName>
+    <label>parasited</label>
+    <description>This creature is being controlled by a parasite. The parasite is heightening their abilities, but also putting their metabolism into overdrive.</description>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <hediffClass>BigAndSmall.Piloted</hediffClass>
+    <stages>
+      <li>
+        <label>parasite present</label>
+        <painFactor>0.5</painFactor>
+        <hungerRateFactor>1.3</hungerRateFactor>
+        <statFactors>
+          <GlobalLearningFactor>1.3</GlobalLearningFactor>
+        </statFactors>
+      </li>
+    </stages>
+    
+    <comps>
+	    <li Class="BigAndSmall.CompProperties_Piloted">
+            <pilotRequired>true</pilotRequired>
+            <pilotCapacity>1</pilotCapacity>
+            <flatBonusIfPiloted>0.25</flatBonusIfPiloted>
+            <pilotConsciousnessOffset>1</pilotConsciousnessOffset>
+            <temporarilySwapIdeology>true</temporarilySwapIdeology>
+            <temporarilySwapFaction>true</temporarilySwapFaction>
+            <removeIfNoPilot>true</removeIfNoPilot>
+            <injuryOnRemoval>10</injuryOnRemoval>
+            <pilotLearnSkills>1</pilotLearnSkills>
+            <canAutoEjectIfColonist>false</canAutoEjectIfColonist>
+            <inheritPilotSkills>true</inheritPilotSkills>
+            <inheritPilotMentalTraits>true</inheritPilotMentalTraits>
+            <inheritRelationShips>true</inheritRelationShips>
+            <xenotypeToApplyOnApply>MSS_Gaupossessed</xenotypeToApplyOnApply>
+            <!-- <xenotypeToApplyOnRemove></xenotypeToApplyOnRemove> -->
+            <restoreXenotypeOnRemove>false</restoreXenotypeOnRemove>
+            <pilotInheritMentalTraitsOnRemove>true</pilotInheritMentalTraitsOnRemove>
+        </li>
+        <li Class="BigAndSmall.CompProperties_GiveAbilities">
+            cd<abilities><li>BS_EjectPilot</li></abilities>
+        </li>
+		</comps>
+  </HediffDef>
+</Defs>

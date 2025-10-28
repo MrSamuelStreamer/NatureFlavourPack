@@ -33,15 +33,72 @@
             <inheritPilotMentalTraits>true</inheritPilotMentalTraits>
             <temporarilySwapName>true</temporarilySwapName>
             <inheritRelationShips>true</inheritRelationShips>
-            <killOnRemove>false</killOnRemove>
-            <xenotypeToApplyOnApply>MSS_Gaupossessed</xenotypeToApplyOnApply>
-            <xenotypeToApplyOnRemove>MSS_GauHusk</xenotypeToApplyOnRemove>
-            <restoreXenotypeOnRemove>false</restoreXenotypeOnRemove>
-            <pilotInheritMentalTraitsOnRemove>true</pilotInheritMentalTraitsOnRemove>
+            <killOnRemove>false</killOnRemove> <!-- kill the host when the parasite exits-->
+            <xenotypeToApplyOnApply>MSS_Gaupossessed</xenotypeToApplyOnApply> <!-- xenotype to apply to the host when the parasite enters-->
+            <xenotypeToApplyOnRemove>MSS_GauHusk</xenotypeToApplyOnRemove> <!-- xenotype to apply to the host when the parasite exits-->
+            <restoreXenotypeOnRemove>false</restoreXenotypeOnRemove> <!-- Restore the hosts xenotype to the original when the parasite exits-->
+            <pilotInheritMentalTraitsOnRemove>true</pilotInheritMentalTraitsOnRemove> <!-- pilot should gain the hosts mental traits when it leaves-->
+            <!-- <hediffsToApplyOnEnter></hediffsToApplyOnEnter> --> <!-- Hediffs applied to the host when the parasite enters-->
+            <hediffsToApplyOnRemove> <!-- Hediffs applied to the host when the parasite exits-->
+              <MSS_Husk>1</MSS_Husk>
+            </hediffsToApplyOnRemove>
         </li>
         <li Class="BigAndSmall.CompProperties_GiveAbilities">
             <abilities><li>BS_EjectPilot</li></abilities>
         </li>
 		</comps>
   </HediffDef>
+
+  <HediffDef>
+  <defName>MSS_Husk</defName>
+  <label>Empty Husk</label>
+  <description>Without it's Gauranlen Queen, this person is just an empty husk.</description>
+  <isBad>true</isBad>
+  <everCurableByItem>false</everCurableByItem>
+  <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+  <aptitudes>
+    <Social>-20</Social>
+    <Intellectual>-12</Intellectual>
+    <Animals>-12</Animals>
+    <Artistic>-12</Artistic>
+    <Crafting>-4</Crafting>
+    <Construction>-4</Construction>
+    <Plants>-4</Plants>
+    <Medicine>-4</Medicine>
+    <Cooking>-4</Cooking>
+  </aptitudes>
+  <stages>
+    <li>
+      <painFactor>0.30</painFactor>
+      <socialFightChanceFactor>0</socialFightChanceFactor>
+      <statFactors>
+        <PsychicSensitivity>0</PsychicSensitivity>
+        <GlobalLearningFactor>0</GlobalLearningFactor>
+        <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">-1.00</SlaveSuppressionFallRate>
+      </statFactors>
+      <statOffsets>
+        <PawnBeauty>-1</PawnBeauty>
+        <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">2.0</SlaveSuppressionOffset>
+      </statOffsets>
+      <hungerRateFactor>0.7</hungerRateFactor>
+      <capMods>
+        <li>
+          <capacity>Consciousness</capacity>
+          <!-- <setMax>0.8</setMax> -->
+          <offset>-0.20</offset>
+        </li>
+      </capMods>
+      <disablesNeeds>
+        <!-- <li>Rest</li> -->
+        <li>Comfort</li>
+        <li>Mood</li>
+        <li>Beauty</li>
+        <li>Outdoors</li>
+        <li>Indoors</li>
+        <li>Joy</li>
+      </disablesNeeds>
+    </li>
+  </stages>
+  <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+</HediffDef>
 </Defs>

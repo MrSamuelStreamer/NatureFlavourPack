@@ -2,8 +2,7 @@
   <HediffDef>
     <defName>MSS_Implanted</defName>
     <label>implanted</label>
-    <description>This creature is being controlled by a parasite. The parasite is heightening their
-      abilities, but also putting their metabolism into overdrive.</description>
+    <description>This creature is being controlled by a parasite. The parasite is heightening their abilities, but also putting their metabolism into overdrive.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
     <initialSeverity>1</initialSeverity>
@@ -34,18 +33,27 @@
         <inheritPilotMentalTraits>true</inheritPilotMentalTraits>
         <temporarilySwapName>true</temporarilySwapName>
         <inheritRelationShips>true</inheritRelationShips>
-        <killOnRemove>false</killOnRemove> <!-- kill the host when the parasite exits-->
-        <xenotypeToApplyOnApply>MSS_Gaupossessed</xenotypeToApplyOnApply> <!-- xenotype to apply to
-        the host when the parasite enters-->
-        <xenotypeToApplyOnRemove>MSS_GauHusk</xenotypeToApplyOnRemove> <!-- xenotype to apply to the
-        host when the parasite exits-->
-        <restoreXenotypeOnRemove>false</restoreXenotypeOnRemove> <!-- Restore the hosts xenotype to
-        the original when the parasite exits-->
-        <pilotInheritMentalTraitsOnRemove>true</pilotInheritMentalTraitsOnRemove> <!-- pilot should
-        gain the hosts mental traits when it leaves-->
-        <!-- <hediffsToApplyOnEnter></hediffsToApplyOnEnter> --> <!-- Hediffs
-        applied to the host when the parasite enters-->
-        <hediffsToApplyOnRemove> <!-- Hediffs applied to the host when the parasite exits-->
+        
+        <!-- kill the host when the parasite exits-->
+        <killOnRemove>false</killOnRemove>
+        
+        <!-- xenotype to apply to the host when the parasite enters-->
+        <xenotypeToApplyOnApply>MSS_Gaupossessed</xenotypeToApplyOnApply> 
+        
+        <!-- xenotype to apply to the host when the parasite exits-->
+        <xenotypeToApplyOnRemove>MSS_GauHusk</xenotypeToApplyOnRemove>
+        
+        <!-- Restore the hosts xenotype to the original when the parasite exits-->
+        <restoreXenotypeOnRemove>false</restoreXenotypeOnRemove> 
+        
+        <!-- pilot should  gain the hosts mental traits when it leaves-->
+        <pilotInheritMentalTraitsOnRemove>true</pilotInheritMentalTraitsOnRemove> 
+        
+        <!-- Hediffs applied to the host when the parasite enters-->
+        <!-- <hediffsToApplyOnEnter></hediffsToApplyOnEnter> --> 
+        
+        <!-- Hediffs applied to the host when the parasite exits-->
+        <hediffsToApplyOnRemove> 
           <MSS_Husk>1</MSS_Husk>
         </hediffsToApplyOnRemove>
       </li>

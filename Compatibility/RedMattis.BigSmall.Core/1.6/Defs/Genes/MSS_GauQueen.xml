@@ -6,7 +6,7 @@
         <iconPath>GeneIcons/BS_Parasite</iconPath>
         <displayCategory>BS_Pilotable</displayCategory>
         <abilities>
-            <li>BS_Parasite</li>
+            <li>MSS_Parasite</li>
         </abilities>
 
         <displayOrderInCategory>1</displayOrderInCategory>
@@ -22,7 +22,7 @@
 
     <AbilityDef>
         <defName>MSS_Parasite</defName>
-        <label>parasite</label>
+        <label>take host</label>
         <description>Jump onto the target and dig into their nervous system and influence their actions\n\nOnly works on stunned targets or those with reduced awareness.</description>
         <iconPath>GeneIcons/BS_Parasite</iconPath>
         <displayOrder>100</displayOrder>

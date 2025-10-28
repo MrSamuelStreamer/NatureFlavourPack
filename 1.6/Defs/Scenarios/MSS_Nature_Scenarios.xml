@@ -14,16 +14,16 @@
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
 					<def>ConfigurePawnsXenotypes</def>
 					<pawnChoiceCount>1</pawnChoiceCount>
-					<customSummary>Start with a Harbingerkin.</customSummary>
+					<customSummary>Start with a Gauranlen Queen.</customSummary>
 					<overrideKinds>
 						<li>
-							<xenotype>mytigio_Harbingerkin</xenotype>
+							<xenotype>MSS_GauQueen</xenotype>
 							<pawnKind>Tribesperson</pawnKind>
 						</li>
 					</overrideKinds>
 					<xenotypeCounts>
 						<li>
-							<xenotype>mytigio_Harbingerkin</xenotype>
+							<xenotype>MSS_GauQueen</xenotype>
 							<count>1</count>
 							<requiredAtStart>true</requiredAtStart>
 						</li>

@@ -14,7 +14,7 @@
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_GauranlenAffinity</li>
       <li MayRequire="redmattis.bigsmall.core">BS_AriettyFrame</li>
       <li MayRequire="redmattis.bigsmall.core">BS_CannotWearClothingOrArmor</li>
-      <li MayRequire="redmattis.bigsmall.core">BS_Parasite</li>
+      <li MayRequire="redmattis.bigsmall.core">MSS_GauParasite</li>
       <li MayRequire="sarg.alphagenes">AG_Spinnerets</li>
       <li MayRequire="sarg.alphagenes">AG_Female</li>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_SapBlood</li>

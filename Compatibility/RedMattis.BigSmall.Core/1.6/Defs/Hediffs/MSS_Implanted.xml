@@ -1,7 +1,7 @@
 <Defs>
   <HediffDef>
     <defName>MSS_Implanted</defName>
-    <label>parasited</label>
+    <label>implanted</label>
     <description>This creature is being controlled by a parasite. The parasite is heightening their abilities, but also putting their metabolism into overdrive.</description>
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
@@ -17,7 +17,6 @@
         </statFactors>
       </li>
     </stages>
-    
     <comps>
 	    <li Class="BigAndSmall.CompProperties_Piloted">
             <pilotRequired>true</pilotRequired>
@@ -28,18 +27,20 @@
             <temporarilySwapFaction>true</temporarilySwapFaction>
             <removeIfNoPilot>true</removeIfNoPilot>
             <injuryOnRemoval>10</injuryOnRemoval>
-            <pilotLearnSkills>1</pilotLearnSkills>
+            <pilotLearnSkills>0.2</pilotLearnSkills>
             <canAutoEjectIfColonist>false</canAutoEjectIfColonist>
             <inheritPilotSkills>true</inheritPilotSkills>
             <inheritPilotMentalTraits>true</inheritPilotMentalTraits>
+            <temporarilySwapName>true</temporarilySwapName>
             <inheritRelationShips>true</inheritRelationShips>
+            <killOnRemove>false</killOnRemove>
             <xenotypeToApplyOnApply>MSS_Gaupossessed</xenotypeToApplyOnApply>
-            <!-- <xenotypeToApplyOnRemove></xenotypeToApplyOnRemove> -->
+            <xenotypeToApplyOnRemove>MSS_GauHusk</xenotypeToApplyOnRemove>
             <restoreXenotypeOnRemove>false</restoreXenotypeOnRemove>
             <pilotInheritMentalTraitsOnRemove>true</pilotInheritMentalTraitsOnRemove>
         </li>
         <li Class="BigAndSmall.CompProperties_GiveAbilities">
-            cd<abilities><li>BS_EjectPilot</li></abilities>
+            <abilities><li>BS_EjectPilot</li></abilities>
         </li>
 		</comps>
   </HediffDef>

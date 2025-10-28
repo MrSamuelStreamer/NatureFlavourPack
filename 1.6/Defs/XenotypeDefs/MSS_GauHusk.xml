@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSS_GauHusk</defName>
+    <label>Husk</label>
+    <description>An empty shell left after a host has lost its Gauranlen Queen. Mindless and dying.</description>
+    <descriptionShort>An empty shell left after a host has lost its Gauranlen Queen. Mindless and dying.</descriptionShort>
+    <iconPath>Xenotypes/BS_JotunNoHorns</iconPath>
+    <inheritable>false</inheritable>
+    <genes>
+      <li MayRequire="RedMattis.Undead">VU_UltraRapidAging</li>
+			<li>Immunity_Weak</li>
+			<li>WoundHealing_VerySlow</li>
+			<li>PsychicAbility_Deaf</li>
+			<li MayRequire="redmattis.bigsmall.core">BS_Very_Slow</li>
+			<li>Neversleep</li>
+			<li MayRequire="redmattis.bigsmall.core">BS_PainNumb</li>
+			<li>Sterile</li>
+			<li MayRequire="RedMattis.Undead">VU_Pallor</li>
+			<li MayRequire="redmattis.bigsmall.core">BS_Learning_None</li>
+			<li MayRequire="redmattis.bigsmall.core">BS_Instability_Catastrophic</li>
+			<li MayRequire="redmattis.bigsmall.core">BS_VerySimpleMind</li>
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeTerrible_Melee</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudeTerrible_Plants</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

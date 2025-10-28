@@ -3,8 +3,8 @@
   <XenotypeDef>
     <defName>MSS_GauHusk</defName>
     <label>Husk</label>
-    <description>An empty shell left after a host has lost its Gauranlen Queen. Mindless and dying.</description>
-    <descriptionShort>An empty shell left after a host has lost its Gauranlen Queen. Mindless and dying.</descriptionShort>
+    <description>The hollow husk of a Gaupossesed without it's queen. Mindless, aimless, and slowly dying.</description>
+    <descriptionShort>The hollow husk of a Gaupossesed without it's queen. Mindless, aimless, and slowly dying.</descriptionShort>
     <iconPath>Xenotypes/BS_JotunNoHorns</iconPath>
     <inheritable>false</inheritable>
     <genes>

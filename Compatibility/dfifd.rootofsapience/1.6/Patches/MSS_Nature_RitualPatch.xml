@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PreceptDef[defName="AcquireRoot"]/modExtensions</xpath>
+		<value>
+			<modExtensions>
+				<li Class="TPRitualAttachableOutcomes.Precept_Ritual_Custom">
+					<coolDownDays>5</coolDownDays>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+</Patch>

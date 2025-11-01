@@ -1,6 +1,6 @@
 <Defs>
   <HediffDef ParentName="BS_DefaultHumanlikeAnimal">
-    <defName>HL_AEXP_Gorilla_RaceHediff</defName> 
+    <defName>HL_Gorilla_RaceHediff</defName> 
     <description>Gorilla are mighty primates known for their size and intelligence, but many underestimate their harmony with the anima and critical thinking skills.</description>
     <label>Gorilla</label>
     <defaultLabelColor>(0.5, 1, 1)</defaultLabelColor>

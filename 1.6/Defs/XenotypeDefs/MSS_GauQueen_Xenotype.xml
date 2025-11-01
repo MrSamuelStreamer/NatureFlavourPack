@@ -25,7 +25,6 @@
       <li MayRequire="redmattis.bigsmall.core">BS_NaturalPsychic</li>
       <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_LatentPsychic</li>
       <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_PruningAccelerated</li>
-      <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_GauranlenNeed</li>
       <li>MoveSpeed_Quick</li>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_GreenThumb</li>
       <li MayRequire="sarg.alphagenes">AG_ToxResist_Vulnerability</li>

@@ -16,4 +16,10 @@
 			</li>
 		</value>
     </Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_TreeAnima"]</xpath>
+		<value>
+			<tickertype>Normal</tickertype>
+		</value>
+    </Operation>
 </Patch>

@@ -17,7 +17,6 @@
       <li>WoundHealing_Slow</li>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_ProgressiveAttunement</li>
       <li>PsychicAbility_Extreme</li>
-      <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_GauranlenNeed</li>
       <li MayRequire="vanillaracesexpanded.phytokin">VRE_GreenThumb</li>
       <li MayRequire="sarg.alphagenes">AG_ColdSlowness</li>
       <li MayRequire="sarg.alphagenes">AG_ToxResist_Vulnerability</li>

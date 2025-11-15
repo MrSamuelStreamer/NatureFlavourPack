@@ -8,8 +8,8 @@
 				<thingToSpawn>dfifd_AnimaRoot</thingToSpawn>
 				<spawnCount>1</spawnCount>
 				<spawnIntervalRange>
-					<min>400000</min>
-					<max>800000</max>
+					<min>40000</min>
+					<max>200000</max>
 				</spawnIntervalRange>
 				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
 				<showMessageIfOwned>true</showMessageIfOwned>
